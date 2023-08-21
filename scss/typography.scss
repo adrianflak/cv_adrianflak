@@ -6,6 +6,7 @@ html {
 p {
     // @include convertToRem(font-size, 24);
     font-weight: 300;
+    line-height: 18px;
 }
 a {
     font-family: 'Open Sans', sans-serif;
@@ -14,16 +15,15 @@ a {
 }
 .col-left h2 {
     font-weight: 700;
-    letter-spacing: 5px;
+    @include convertToRem(letter-spacing, 5);
 }
 .col-right h2 {
     font-weight: 500;
-    letter-spacing: 2px;
+    @include convertToRem(letter-spacing, 2);
 }
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
-
 h1 {
     @include convertToRem(font-size, 50);
     font-weight: 700;
@@ -33,13 +33,8 @@ h2 {
 }
 h3 {
     font-weight: 400;
+    @include convertToRem(font-size, 18);
 }
-h4 {
-
-}
-h5 {
-    
-}
-h6 {
-
+.desc h2 {
+    font-weight: 300;
 }

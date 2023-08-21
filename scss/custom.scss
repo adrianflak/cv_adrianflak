@@ -3,6 +3,9 @@
     margin: 0 auto;
     min-height: 600px;
     position: relative;
+    -webkit-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 25px -18px rgba(0, 0, 0, 1);
 }
 .flex-row {
     display: flex;
@@ -12,11 +15,16 @@
     display: flex;
     flex-direction: column;
 }
-.border {
-    border: 1px solid #000;
-}
 .col-left {
     width: 62%;
+}
+.col-left::after {
+    content: "";
+    width: 100%;
+    height: 60px;
+    background-color: var(--orange);
+    display: block;
+    margin-top: 80px;
 }
 .col-right {
     width: 38%; 
@@ -26,8 +34,8 @@
     right: 0;
     top: 130px;
     background-color: var(--orange);
-    width: 45%;
-    padding: 30px 0 30px 200px;
+    width: 43%;
+    padding: 40px 0 40px 210px;
 }
 img {
     z-index: 1;
@@ -42,7 +50,7 @@ img {
     color: var(--white);
 }
 .img-hero {
-    margin: 45px 0 0 55px;
+    margin: 45px 0 50px 55px;
     border-radius: 185px;
     border: 20px solid #000;
 }
@@ -56,18 +64,17 @@ img {
 .orange-border {
     border: 5px solid var(--orange);
     padding: 15px 20px;
-    width: 220px;
+    width: 210px;
     text-align: center;
 }
 .skills {
-    width: 75%;
-    margin: 20px 0;
+    width: 70%;
+    margin: 40px 0;
 }
 .progress {
     width: 100%;
     border: 3px solid var(--orange);
-    height: 25px;
-    margin: 10px 0;
+    height: 23px;
 }
 .progress.illustrator::after,
 .progress.indesign::after,
@@ -102,7 +109,7 @@ img {
 .item {
     justify-content: flex-start;
     align-items: center;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 .square {
     width: 30px;
@@ -135,10 +142,45 @@ img {
     width: 80%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 45px;
+    margin-left: 35px;
 }
 .contact {
     width: 70%;
     margin: 40px 0;
+}
+.skill-title {
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+.address-info h3,
+.web-info h3,
+.phone-info h3 {
+    margin-bottom: 5px;
+}
+.item h3 {
+    margin: 5px 0;
+}
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.social-media {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.line {
+    height: 3px;
+    width: 70%;
+    margin: 80px 0 40px 0;
+    background-color: var(--white);
 }
