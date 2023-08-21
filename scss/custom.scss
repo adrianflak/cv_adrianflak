@@ -33,4 +33,69 @@ img {
     z-index: 1;
     position: relative;
 }
-
+.left-col-colors {
+    background-color: var(--white);
+    color: var(--black);
+}
+.right-col-colors {
+    background-color: var(--black);
+    color: var(--white);
+}
+.img-hero {
+    margin: 45px 0 0 55px;
+    border-radius: 185px;
+    border: 20px solid #000;
+}
+// .empty-markup {
+//     height: 400px;
+// }
+.col-right {
+    justify-content: center;
+    align-items: center;
+}
+.orange-border {
+    border: 5px solid var(--orange);
+    padding: 15px 20px;
+    width: 220px;
+    text-align: center;
+}
+.skills {
+    width: 75%;
+    margin: 20px 0;
+}
+.progress {
+    width: 100%;
+    border: 3px solid var(--orange);
+    height: 25px;
+    margin: 10px 0;
+}
+.progress.illustrator::after,
+.progress.indesign::after,
+.progress.photoshop::after,
+.progress.msword::after {
+    content: '';   
+    height: 100%;
+    display: block;
+    background-color: var(--orange);
+}
+.progress.illustrator::after {
+    width: 75%;
+}
+.progress.photoshop::after {
+    width: 85%;
+}
+.progress.indesign::after {
+    width: 70%;
+}
+.progress.msword::after {
+    width: 95%;
+}
+.orange-bg {
+    background-color: var(--orange);
+    text-align: right;
+    width: 85%;
+    padding: 12px 35px 12px 0;
+}
+.desc {
+    color: var(--white);
+}

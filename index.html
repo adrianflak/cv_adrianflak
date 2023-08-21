@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container flex-row mobile border">
-        <div class="col-left">
-            <img src="https://res.cloudinary.com/di4gzas1g/image/upload/c_scale,h_327,q_90,w_330/v1692599853/cv_npyuxy.webp" alt="">
+        <div class="col-left left-col-colors">
+            <img class="img-hero" src="https://res.cloudinary.com/di4gzas1g/image/upload/c_scale,h_327,q_90,w_330/v1692599853/cv_npyuxy.webp" alt="">
             <!-- <img src="img/cv.png" alt="" style="width: 330px;"> -->
             <div class="desc">
                 <h1>Kelly White</h1>
@@ -132,28 +132,38 @@
             </div>
 
         </div>
-        <div class="col-right">
-            <h2>Contact Me</h2>
+        <div class="col-right right-col-colors flex-column">
+            <!-- <div class="empty-markup"></div> -->
+            <h2 class="orange-border">Contact Me</h2>
             <div class="contact">
-            <i class="fa-solid fa-location-dot"></i>   
-            <div class="address">
-                <p>
-                    123, Street Oclaho <br>
-                    New York City, USA
-                </p>
+                <div class="address flex-row">
+                    <i class="fa-solid fa-location-dot"></i>   
+                    <div class="address-info">
+                        <h3>Address</h3>
+                        <p>
+                            123, Street Oclaho <br>
+                            New York City, USA
+                        </p>
+                    </div>
+                </div>
+                <div class="web flex-row">
+                    <i class="fa-solid fa-globe"></i> 
+                    <div class="web-info">
+                        <h3>Web</h3>
+                        <a href="mailto:email@email.com">email@email.com</a>
+                        <a href="https://website.com">website.com</a>
+                    </div>
+                </div>
+                <div class="phone flex-row">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-info">
+                        <h3>Phone</h3>
+                        <a href="tel:+48123123123">+48 123 123 123</a>
+                        <a href="tel:+48123123123">+48 123 123 123</a>
+                    </div>
+                </div>
             </div>
-            <i class="fa-solid fa-globe"></i> 
-            <div class="web">
-                <a href="mailto:email@email.com">email@email.com</a>
-                <a href="https://website.com">website.com</a>
-            </div>
-            <i class="fa-solid fa-phone"></i>
-            <div class="phone">
-                <a href="tel:+48123123123">+48 123 123 123</a>
-                <a href="tel:+48123123123">+48 123 123 123</a>
-            </div>
-            </div>
-            <h2>Pro Skills</h2>
+            <h2 class="orange-border">Pro Skills</h2>
             <div class="skills">
                 <h3>Illustrator</h3>
                 <div class="progress illustrator"></div>
