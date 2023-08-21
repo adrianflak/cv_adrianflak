@@ -1,7 +1,7 @@
 
 @media (max-width: 768px) {
     html {
-        font-size: 70%;
+        font-size: 90%;
     }
     .container.mobile {
         flex-direction: column;
@@ -10,4 +10,42 @@
     .col-right {
         width: 100%;
     } 
+    .desc {
+        position: static;   
+        background-color: var(--orange);
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .img-hero-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-hero {
+        margin: 40px 0 0 10px;
+        max-width: 80%;
+    }
+    .col-right {
+        padding: 60px 0;
+    }
+    .item {
+        flex-wrap: wrap;
+    }
+    .item-desc,
+    .date {
+        width: auto;
+    }
+    .item-desc {
+        margin: 0 20px;
+    }
+}
+@media (max-width: 500px) {
+    .img-hero {
+        @include convertToRem(border, 10);
+        border-style: solid;
+        border-color: var(--black);
+    }
 }
