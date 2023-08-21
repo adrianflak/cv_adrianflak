@@ -221,6 +221,27 @@ img {
   color: var(--white);
 }
 
+.item {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.square {
+  width: 30px;
+  margin: 20px;
+  height: 30px;
+  background-color: var(--orange);
+}
+
+.date {
+  width: 25%;
+}
+
+.item-desc {
+  width: 55%;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 70%;
