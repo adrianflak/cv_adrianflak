@@ -1,0 +1,35 @@
+
+html {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    // @include convertToRem(font-size, 24);
+}
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    @include convertToRem(font-size, 50);
+}
+h2 {
+    @include convertToRem(font-size, 30);
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+    
+}
+h6 {
+
+}

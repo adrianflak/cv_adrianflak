@@ -1,0 +1,13 @@
+
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+    .container.mobile {
+        flex-direction: column;
+    }
+    .col-left,
+    .col-right {
+        width: 100%;
+    } 
+}

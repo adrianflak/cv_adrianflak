@@ -2,6 +2,7 @@
     max-width: 960px;
     margin: 0 auto;
     min-height: 600px;
+    position: relative;
 }
 .flex-row {
     display: flex;
@@ -14,3 +15,22 @@
 .border {
     border: 1px solid #000;
 }
+.col-left {
+    width: 62%;
+}
+.col-right {
+    width: 38%; 
+}
+.desc {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    background-color: var(--orange);
+    width: 45%;
+    padding: 30px 0 30px 200px;
+}
+img {
+    z-index: 1;
+    position: relative;
+}
+

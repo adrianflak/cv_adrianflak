@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,10 +53,37 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --orange: orange;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   min-height: 600px;
+  position: relative;
 }
 
 .flex-row {
@@ -70,4 +98,39 @@ table {
 
 .border {
   border: 1px solid #000;
+}
+
+.col-left {
+  width: 62%;
+}
+
+.col-right {
+  width: 38%;
+}
+
+.desc {
+  position: absolute;
+  right: 0;
+  top: 130px;
+  background-color: var(--orange);
+  width: 45%;
+  padding: 30px 0 30px 200px;
+}
+
+img {
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .container.mobile {
+    flex-direction: column;
+  }
+  .col-left,
+  .col-right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
