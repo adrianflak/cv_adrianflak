@@ -49,3 +49,20 @@
         border-color: var(--black);
     }
 }
+
+@media (max-width: 768px) {
+    .desktop-display {
+        display: none;
+    }
+    .mobile-display {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .desktop-display {
+        display: block;
+    }
+    .mobile-display {
+        display: none;
+    }
+}
